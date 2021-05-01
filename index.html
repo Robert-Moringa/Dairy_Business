@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link type="text/js" href="index.js">
         <title></title>
     </head>
     <body>
@@ -14,8 +15,11 @@
             <p id="shedC"></p>
             <p id="shedD"></p>
          </div>
-         <script>
-             
+         <script src="index.js">
+             document.getElementById("shedA").innerHTML = "Your produduction in shed A is " + shedProduction.shedA + " litres per day.";
+             document.getElementById("shedB").innerHTML = "Your produduction in shed B is " + shedProduction.shedB + " litres per day.";
+             document.getElementById("shedC").innerHTML = "Your produduction in shed C is " + shedProduction.shedC + " litres per day.";
+             document.getElementById("shedD").innerHTML = "Your produduction in shed D is " + shedProduction.shedD + " litres per day.";
          </script>
     </body>
 
