@@ -14,13 +14,33 @@
             <p id="shedB"></p>
             <p id="shedC"></p>
             <p id="shedD"></p>
-         </div>
-         <script src="index.js">
+
+            <h4 id="totalprod"></h4>
+        </div>
+        <div id="income">
+            <h3>INCOME</h3>
+            <p>This is the capital generated from sale of milk.</p>
+            <p id="weekly"></p>
+            <p id="yearly"></p>
+        </div>
+        <div id="eachMonth">
+            <h4>Breakdown of each month's income.</h4>
+        </div>
+        <script src="index.js">
+            // shed production
              document.getElementById("shedA").innerHTML = "Your produduction in shed A is " + shedProduction.shedA + " litres per day.";
              document.getElementById("shedB").innerHTML = "Your produduction in shed B is " + shedProduction.shedB + " litres per day.";
              document.getElementById("shedC").innerHTML = "Your produduction in shed C is " + shedProduction.shedC + " litres per day.";
              document.getElementById("shedD").innerHTML = "Your produduction in shed D is " + shedProduction.shedD + " litres per day.";
-         </script>
+             document.getElementById("totalprod").innerHTML = "Your total produduction in all sheds is " + totalProduction() + " litres per day.";
+
+             //income
+             document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh " + incomeOverTime(45,7);
+             document.getElementById("yearly").innerHTML = "Your yearly income will be Ksh " +  incomeOverTime(45,7);
+
+            //  each month's income
+
+        </script>
     </body>
 
     </body>
