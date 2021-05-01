@@ -17,18 +17,18 @@ incomeOverTime(45,7);
 incomeOverTime(45,366);
 
 var monthlyIncome={
-    january:( 31 * totalProduction() ),
-    february:totalProduction()*29,
-    march:31*totalProduction(),
-    april:30*totalProduction(),
-    may:totalProduction()*31,
-    june:30*totalProduction(),
-    july:31*totalProduction(),
-    august:30*totalProduction(),
-    sept:31*totalProduction(),
-    oct:30*totalProduction(),
-    nov:31*totalProduction(),
-    dec:30*totalProduction(),
+    jan:31*1876,
+    feb:1876*29,
+    mar:31*1876,
+    apr:30*1876,
+    may:1876*31,
+    jun:30*1876,
+    jul:31*1876,
+    aug:30*1876,
+    sept:31*1876,
+    oct:30*1876,
+    nov:31*1876,
+    dec:30*1876,
 }
 console.log(monthlyIncome.dec);
 
