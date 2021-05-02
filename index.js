@@ -53,9 +53,27 @@ document.getElementById("Sept").innerHTML= monthlyIncome.sept;
 document.getElementById("Oct").innerHTML= monthlyIncome.oct;
 document.getElementById("Nov").innerHTML= monthlyIncome.nov;
 document.getElementById("Dec").innerHTML= monthlyIncome.dec;
+document.getElementById("total1").innerHTML = incomeOverTime(45,366);
 
 //comparison; second rate; 49.60
 var incomeOverTimeNewRate= function(selling_price, time){
     income=(selling_price * total) * time;
     return income;
 }
+var dailyNew= parseInt(incomeOverTimeNewRate(49.6, 1));
+var monthlyIncome={jan:31*dailyNew, feb:dailyNew*29, mar:31*dailyNew, apr:30*dailyNew, may:dailyNew*31, jun:30*dailyNew, jul:31*dailyNew, aug:30*dailyNew, sept:31*dailyNew, oct:30*dailyNew, nov:31*dailyNew, dec:30*dailyNew};
+
+//comparison; Second rate; Ksh. 49.6
+document.getElementById("JanN").innerHTML= monthlyIncome.jan;
+document.getElementById("FebN").innerHTML= monthlyIncome.feb;
+document.getElementById("MarN").innerHTML= monthlyIncome.mar;
+document.getElementById("AprN").innerHTML= monthlyIncome.apr;
+document.getElementById("MayN").innerHTML= monthlyIncome.may;
+document.getElementById("JunN").innerHTML= monthlyIncome.jun;
+document.getElementById("JulN").innerHTML= monthlyIncome.jul;
+document.getElementById("AugN").innerHTML= monthlyIncome.aug;
+document.getElementById("SeptN").innerHTML= monthlyIncome.sept;
+document.getElementById("OctN").innerHTML= monthlyIncome.oct;
+document.getElementById("NovN").innerHTML= monthlyIncome.nov;
+document.getElementById("DecN").innerHTML= monthlyIncome.dec;
+document.getElementById("total1N").innerHTML =parseInt(incomeOverTimeNewRate(49.6,366));
