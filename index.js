@@ -21,34 +21,34 @@ var incomeOverTime= function(selling_price, time){
     return income;
 };
 let weekly = incomeOverTime(45,7);
-document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh " + weekly;
-document.getElementById("yearly").innerHTML = "Your yearly income will be Ksh " +  incomeOverTime(45,366);
+document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh. " + weekly;
+document.getElementById("yearly").innerHTML = "Your yearly income will be Ksh. " +  incomeOverTime(45,366);
 
+// monthly income
+var monthlyIncome={jan:31*total, feb:total*29, mar:31*total, apr:30*total, may:1876*31, jun:30*1876, jul:31*1876, aug:30*1876, sept:31*1876, oct:30*1876, nov:31*1876, dec:30*1876}
+document.getElementById("jan").innerHTML= "Your income for January is Ksh. " + monthlyIncome.jan;
+document.getElementById("feb").innerHTML= "Your income for February is Ksh. " + monthlyIncome.feb;
+document.getElementById("mar").innerHTML= "Your income for March is Ksh. " + monthlyIncome.mar;
+document.getElementById("apr").innerHTML= "Your income for April is Ksh. " + monthlyIncome.apr;
+document.getElementById("may").innerHTML= "Your income for May is Ksh. " + monthlyIncome.may;
+document.getElementById("jun").innerHTML= "Your income for June is Ksh. " + monthlyIncome.jun;
+document.getElementById("jul").innerHTML= "Your income for July is Ksh. " + monthlyIncome.jul;
+document.getElementById("aug").innerHTML= "Your income for August is Ksh. " + monthlyIncome.aug;
+document.getElementById("sept").innerHTML= "Your income for September is Ksh. " + monthlyIncome.sept;
+document.getElementById("oct").innerHTML= "Your income for October is Ksh. " + monthlyIncome.oct;
+document.getElementById("nov").innerHTML= "Your income for November is Ksh. " + monthlyIncome.nov;
+document.getElementById("dec").innerHTML= "Your income for December is Ksh. " + monthlyIncome.dec;
 
-var monthlyIncome={
-    jan:31*1876,
-    feb:1876*29,
-    mar:31*1876,
-    apr:30*1876,
-    may:1876*31,
-    jun:30*1876,
-    jul:31*1876,
-    aug:30*1876,
-    sept:31*1876,
-    oct:30*1876,
-    nov:31*1876,
-    dec:30*1876,
-}
-document.getElementById("jan").innerHTML= "Your income for January is Ksh. " + mothlyIncome.jan;
-document.getElementById("feb").innerHTML= "Your income for February is Ksh. " + mothlyIncome.feb;
-document.getElementById("mar").innerHTML= "Your income for March is Ksh. " + mothlyIncome.mar;
-document.getElementById("apr").innerHTML= "Your income for April is Ksh. " + mothlyIncome.apr;
-document.getElementById("may").innerHTML= "Your income for May is Ksh. " + mothlyIncome.may;
-document.getElementById("jun").innerHTML= "Your income for June is Ksh. " + mothlyIncome.jun;
-document.getElementById("jul").innerHTML= "Your income for July is Ksh. " + mothlyIncome.jul;
-document.getElementById("aug").innerHTML= "Your income for August is Ksh. " + mothlyIncome.aug;
-document.getElementById("sept").innerHTML= "Your income for September is Ksh. " + mothlyIncome.sept;
-document.getElementById("oct").innerHTML= "Your income for October is Ksh. " + mothlyIncome.oct;
-document.getElementById("nov").innerHTML= "Your income for November is Ksh. " + mothlyIncome.nov;
-document.getElementById("dec").innerHTML= "Your income for December is Ksh. " + mothlyIncome.dec;
-
+//comparison; first rate; Ksh. 45
+document.getElementById("Jan").innerHTML= monthlyIncome.jan;
+document.getElementById("Feb").innerHTML= monthlyIncome.feb;
+document.getElementById("Mar").innerHTML= monthlyIncome.mar;
+document.getElementById("Apr").innerHTML= monthlyIncome.apr;
+document.getElementById("May").innerHTML= monthlyIncome.may;
+document.getElementById("Jun").innerHTML= monthlyIncome.jun;
+document.getElementById("Jul").innerHTML= monthlyIncome.jul;
+document.getElementById("Aug").innerHTML= monthlyIncome.aug;
+document.getElementById("Sept").innerHTML= monthlyIncome.sept;
+document.getElementById("Oct").innerHTML= monthlyIncome.oct;
+document.getElementById("Nov").innerHTML= monthlyIncome.nov;
+document.getElementById("Dec").innerHTML= monthlyIncome.dec;
