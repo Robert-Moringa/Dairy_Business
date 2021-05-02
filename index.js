@@ -21,11 +21,12 @@ var incomeOverTime= function(selling_price, time){
     return income;
 };
 let weekly = incomeOverTime(45,7);
+var daily=incomeOverTime(45,1);
 document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh. " + weekly;
 document.getElementById("yearly").innerHTML = "Your yearly income will be Ksh. " +  incomeOverTime(45,366);
 
 // monthly income
-var monthlyIncome={jan:31*total, feb:total*29, mar:31*total, apr:30*total, may:1876*31, jun:30*1876, jul:31*1876, aug:30*1876, sept:31*1876, oct:30*1876, nov:31*1876, dec:30*1876}
+var monthlyIncome={jan:31*daily, feb:daily*29, mar:31*daily, apr:30*daily, may:daily*31, jun:30*daily, jul:31*daily, aug:30*daily, sept:31*daily, oct:30*daily, nov:31*daily, dec:30*daily}
 document.getElementById("jan").innerHTML= "Your income for January is Ksh. " + monthlyIncome.jan;
 document.getElementById("feb").innerHTML= "Your income for February is Ksh. " + monthlyIncome.feb;
 document.getElementById("mar").innerHTML= "Your income for March is Ksh. " + monthlyIncome.mar;
@@ -52,3 +53,9 @@ document.getElementById("Sept").innerHTML= monthlyIncome.sept;
 document.getElementById("Oct").innerHTML= monthlyIncome.oct;
 document.getElementById("Nov").innerHTML= monthlyIncome.nov;
 document.getElementById("Dec").innerHTML= monthlyIncome.dec;
+
+//comparison; second rate; 49.60
+var incomeOverTimeNewRate= function(selling_price, time){
+    income=(selling_price * total) * time;
+    return income;
+}
