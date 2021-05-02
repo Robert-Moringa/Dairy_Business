@@ -5,6 +5,10 @@ body{
 .nav {
     overflow: hidden;
     background-color: rgba(68, 48, 3, 0.521);
+    display: flex;
+    margin-right: 0%;
+    font-size: large;
+    color: white;
 }
   
 .nav a {
