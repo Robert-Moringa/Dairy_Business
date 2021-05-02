@@ -77,3 +77,21 @@ document.getElementById("OctN").innerHTML= monthlyIncome.oct;
 document.getElementById("NovN").innerHTML= monthlyIncome.nov;
 document.getElementById("DecN").innerHTML= monthlyIncome.dec;
 document.getElementById("total1N").innerHTML =parseInt(incomeOverTimeNewRate(49.6,366));
+
+//Difference between the two rates
+var rateDifference=4.6*total;
+var incomeDiff={jan:31*rateDifference, feb:rateDifference*29, mar:31*rateDifference, apr:30*rateDifference, may:rateDifference*31, jun:30*rateDifference, jul:31*rateDifference, aug:30*rateDifference, sept:31*rateDifference, oct:30*rateDifference, nov:31*rateDifference, dec:30*rateDifference};
+
+document.getElementById("JanD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("FebD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("MarD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("AprD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("MayD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("JunD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("JulD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("AugD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("SeptD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("OctD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("NovD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("DecD").innerHTML= parseInt(incomeDiff.jan);
+document.getElementById("total1D").innerHTML =parseInt(incomeOverTimeNewRate(4.6,366));
