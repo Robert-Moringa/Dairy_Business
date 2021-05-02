@@ -33,11 +33,30 @@ body{
 .shed{
     display: flex;
     flex-direction: row;
-    margin-left: 20%; margin-right: 20%;
+    margin-left: 10%; margin-right: 10%;
 }
 .shed>img{
     border: 3px solid rgb(218, 218, 218);
+    width: 35%;
 }
-.shed>div{
+#about{
+    width: 30%;
+}
+#production{
+    width: 35%;
+    padding-left: 2%;
+}
+
+#header{
+    text-align: center;
+}
+.income{
+    margin-left: 10%; margin-right: 10%;
+    height: 20%;
+}
+#income{
+    padding-right: 2%;
+}
+.income>#income{
     padding-left: 2%;
 }
