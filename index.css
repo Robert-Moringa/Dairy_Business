@@ -38,3 +38,6 @@ body{
 .shed>img{
     border: 3px solid rgb(218, 218, 218);
 }
+.shed>div{
+    padding-left: 2%;
+}

@@ -13,7 +13,7 @@ let totalProduction= function(){
     return daily;
 }
 var total= totalProduction();
-document.getElementById("totalprod").innerHTML = "Your total produduction in all sheds is " + total + " litres per day.";
+
 
 // weekly and yearly income
 var incomeOverTime= function(selling_price, time){
@@ -96,3 +96,11 @@ document.getElementById("NovD").innerHTML= parseInt(incomeDiff.jan);
 document.getElementById("DecD").innerHTML= parseInt(incomeDiff.jan);
 document.getElementById("total1D").innerHTML =parseInt(incomeOverTimeNewRate(4.6,366));
 
+function myFunction() {
+    var x = document.getElementById("totalprod").innerHTML = "Your total production in all sheds is " + total + " litres per day.";
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
