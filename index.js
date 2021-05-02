@@ -95,3 +95,4 @@ document.getElementById("OctD").innerHTML= parseInt(incomeDiff.jan);
 document.getElementById("NovD").innerHTML= parseInt(incomeDiff.jan);
 document.getElementById("DecD").innerHTML= parseInt(incomeDiff.jan);
 document.getElementById("total1D").innerHTML =parseInt(incomeOverTimeNewRate(4.6,366));
+

@@ -28,4 +28,13 @@ body{
 .nav a.body {
     background-color: #04AA6D;
     color: white;
-  }
+}
+
+.shed{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%; margin-right: 20%;
+}
+.shed>img{
+    border: 3px solid rgb(218, 218, 218);
+}
