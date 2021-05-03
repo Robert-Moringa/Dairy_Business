@@ -1,12 +1,12 @@
 body{
     background-color: #fffdd0;
+    font-family: serif;
 }
 
 .nav {
     overflow: hidden;
     background-color: rgba(68, 48, 3, 0.521);
     display: flex;
-    margin-right: 0%;
     font-size: large;
     color: white;
 }
@@ -88,4 +88,12 @@ body{
     border-collapse: collapse;
     width: 100%;
     text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(138, 88, 13);
+    padding: 3px;
+    color: white;
+    margin-top: 2%;
 }
