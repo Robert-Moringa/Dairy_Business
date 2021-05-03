@@ -20,10 +20,8 @@ var incomeOverTime= function(selling_price, time){
     income=(selling_price * total) * time;
     return income;
 };
-let weekly = incomeOverTime(45,7);
+var weekly = incomeOverTime(45,7);
 var daily=incomeOverTime(45,1);
-document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh. " + weekly;
-document.getElementById("yearly").innerHTML = "Your yearly income will be Ksh. " +  incomeOverTime(45,366);
 
 // monthly income
 var monthlyIncome={jan:31*daily, feb:daily*29, mar:31*daily, apr:30*daily, may:daily*31, jun:30*daily, jul:31*daily, aug:30*daily, sept:31*daily, oct:30*daily, nov:31*daily, dec:30*daily}
@@ -98,9 +96,15 @@ document.getElementById("total1D").innerHTML =parseInt(incomeOverTimeNewRate(4.6
 
 function myFunction() {
     var x = document.getElementById("totalprod").innerHTML = "Your total production in all sheds is " + total + " litres per day.";
-    if (x.style.display === "none") {
+    var y = document.getElementById("weekly").innerHTML = "Your weekly income will be Ksh. " + weekly;
+    var z = document.getElementById("yearly").innerHTML = "Your yearly income will be Ksh. " +  incomeOverTime(45,366);
+    if (x.style.display === "none", y.style.display === "none", z.style.display === "none") {
       x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "block";
     } else {
       x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "none";
     }
   }
